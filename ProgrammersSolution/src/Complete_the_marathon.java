@@ -1,3 +1,8 @@
+// # 프로그래머스의 해시 문제중 '완주하지 못한 선수' 문제에 관한 풀이
+//
+// 키와 값을 쌍으로 갖는 해시맵에 관한 공부를 할 수 있는 문제
+//
+
 import java.util.HashMap;
 
 public class Complete_the_marathon {
@@ -28,9 +33,7 @@ public class Complete_the_marathon {
 	        	else {
 	        		temp += map.get(participant[i]) + 1;
 	        		map.put(participant[i],temp);
-	        	}
-	           	
-	        	
+	        	}       	
 	        }
 	
 	          for(int i=0; i<completion.length; i++) {
