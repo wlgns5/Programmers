@@ -27,10 +27,10 @@ public class Complete_the_marathon {
 	        HashMap<String, Integer> map = new HashMap<String, Integer>();
 	        for(int i=0; i<participant.length; i++) {
 	        	int temp = 0;
-	        	if(map.get(participant[i]) == null)
+	        	if(map.get(participant[i]) == null) // 중복된 문자열이 들어오는지 체크
 	        		map.put(participant[i], 1);
 	        	
-	        	else {
+	        	else { // 이미 값이 있다면 value를 증가
 	        		temp += map.get(participant[i]) + 1;
 	        		map.put(participant[i],temp);
 	        	}       	
@@ -43,7 +43,7 @@ public class Complete_the_marathon {
 	          }
 	          
 	          for(int i=0; i<participant.length; i++) {
-	        	  if(map.get(participant[i]) == 1)
+	        	  if(map.get(participant[i]) == 1) // value 값이 1인 key가 완주하지 못한 사람
 	        		  answer = participant[i];
 	          }       
         
